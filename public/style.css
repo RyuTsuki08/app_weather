@@ -1,0 +1,250 @@
+:root{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+    font-family: 'Raleway', sans-serif;
+}
+
+#contact>h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    font-size: xx-large;
+}
+
+#social-media{
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 35vh;
+    justify-content: space-around;
+    transition: transform 1.0s ease-out;
+}
+
+#social-media>li>a:hover{
+    transform: rotateX(180deg);
+}
+
+
+#root>#contact{
+    color: #ffff;
+    background: #200122;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6f0000, #200122);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6f000075, #0e015579), url(http://localhost:2112/6802cc2de5df70b83d6c638864a6bf5c.gif)
+}
+
+.hability{
+    font-size: xx-large;
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+    flex-direction: column;
+    height: 64vh;
+    justify-content: space-between;
+}
+
+#listas{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 69vw;
+}
+
+#listas>ul{
+    list-style-type: none;
+}
+
+#text-area{
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#us{
+    display: flex;
+}
+
+#us>img{
+    padding: 1pc;
+    height: 68vh;
+    border-radius: 1pc;
+    transition: transform 0.5s ease-in-out;
+}
+
+#us>img:hover{
+    box-shadow: black 0px 10px 9px 0px;
+    transform: translateY(-20px);
+}
+
+.d{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    width: 67vw;
+}
+
+.d>ul{
+    list-style-type: none;
+}
+
+.d>ul>li{
+    display: flex;
+    align-content: center;
+    justify-content: start;
+    align-items: center;
+    font-size: xx-large;
+    width: 50vw;
+}
+
+.line{
+    width: 36vw;
+}
+
+
+#navigation{
+    overflow-y:hidden;
+}
+
+
+.header{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: linear-gradient(to right, #0000006b, #20202079), url('http://localhost:2112/55e3d3320843142d6760b918e66d345f.jpg');
+    background-position: center;
+    background-repeat: repeat;
+    background-size: 100vw;
+    background-attachment: fixed;
+}
+
+
+#weather-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.pPp{
+    float: right;
+    text-align: justify;
+    font-size: 20px;
+}
+
+#imgPP{
+    width: 320px;
+    padding: 3%;
+}
+
+.weather_img{
+    width: 200px;
+}
+
+#imgPP{
+    text-align: justify;
+}
+
+.navbar{
+    background-color: rgba(255, 255, 255, 0.233);
+    padding: 0;
+}
+
+.content-item>h1{
+    text-align: center;
+    padding: 2%;
+}
+
+.navbar-link{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-decoration-line: none;
+    padding: 10px;
+}
+
+#row{
+    color: blanchedalmond;
+    width: 101vw;
+    height: 100vh;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #02416b80, #0479a37e, #ffffff69), url('http://localhost:2112/bb591e2cb68d52ba61579830f333cb5c.jpg'); 
+}
+
+#card{
+    text-align: center;
+    color: aliceblue;
+    border: 0;
+    width: 40vw;
+    height: 30vh;
+    margin-left: 3%;
+    margin-top: 7%;
+}
+
+
+.card{
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0.363);
+}
+
+.not-numbers{
+    font-size: x-large;
+    color: brown;
+}
+
+#agft{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.pP{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.list-group-item{
+    width: 40%;
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0.418);
+}
+
+#w-form{
+    height: 44vh;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+@media only screen and (max-width: 1000px)
+{
+    :root{
+        overflow-x: hidden;
+    }
+    .header{
+        background-size: 364vw;
+    }
+    #navigation{
+        height: 10vh;
+    }
+}
+
