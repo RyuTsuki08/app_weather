@@ -11,7 +11,7 @@ module.exports = {
         static: {
             directory: path.join(__dirname, 'public'),
           },
-        port: 2112,  
+        port: 2112 || process.env.PORT ,  
     },
     module : {
         rules : [
