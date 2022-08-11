@@ -3,7 +3,6 @@ import WeatherForm from "./Weather";
 import Navigation from './Nav';
 import bgSky from '../../../public/5833.jpg'
 import headerImg from '../../../public/one.jpg'
-import Aos from "aos";
 const openWAPI = 'https://openweathermap.org/themes/openweathermap/assets/img/logo_white_cropped.png';
 
 {/* sometimes I was wanted be a CPU, maybe don't feel, just think and does the necesary */}
