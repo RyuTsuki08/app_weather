@@ -1,4 +1,3 @@
-import Aos from "aos";
 import React, { useState, useEffect } from "react";
 import weather_img from '../img/ICONO_PAGINA.svg';
 import rain_img from '../img/LLUVIA.svg';
