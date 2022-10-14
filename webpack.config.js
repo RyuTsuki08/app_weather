@@ -11,7 +11,8 @@ module.exports = {
         static: {
             directory: path.join(__dirname, 'public'),
           },
-          allowedHosts:'auto'
+          port: process.env.PORT,
+          allowedHosts:'all'
     },
     module : {
         rules : [
