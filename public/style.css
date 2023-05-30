@@ -235,7 +235,7 @@ body{
     justify-content: space-around;
 }
 
-@media only screen and (max-width: 1000px)
+/* @media only screen and (max-width: 1000px)
 {
     :root{
         overflow-x: hidden;
@@ -246,5 +246,5 @@ body{
     #navigation{
         height: 10vh;
     }
-}
+} */
 

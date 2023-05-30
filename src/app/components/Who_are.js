@@ -1,21 +1,52 @@
 import React, { useState } from "react";
 import me from '../img/yo.jpg';
 import dabi from '../img/Curriculum.jpg';
-import str from '../img/stars.gif';
 import weather_img from '../img/TORMENTA.svg';
 import Navigation from './Nav';
+import { useMediaQuery } from 'react-responsive'
+import Breakpoints from './query';
 
 function Who_are(props)
 {
+
+    const isDesktopOrLaptop = useMediaQuery({
+        query: Breakpoints.lg
+      })
+
+    const isMobile = useMediaQuery({
+        query: Breakpoints.sm
+    })
+
+    const isTablet = useMediaQuery({
+        query: Breakpoints.md
+    })
+
     return(
-        <div id="contact">
-            <div id="text-area">
+        <>
+        <Navigation style={{
+                position: "fixed",
+            }}/>
+        <div id="contact" style={isDesktopOrLaptop ? {} : {
+               height: '385vh'
+            }}>
+            <div id="text-area" style={{
+                padding: '8%',
+                paddingBottom: '2%'
+            }}>
             <a className='img-who' href='/'>
-                    <img src={weather_img} alt="" width="100" height="70"/>
+                    <img src={weather_img} alt="" style={{
+                        width: 'fit-content'
+                    }} height="70"/>
             </a>
             <h1>Contact us</h1>
             </div>
-            <div id="us">
+            <div id="us" style={isDesktopOrLaptop ? {} : {
+                display: 'flex',
+                flexWrap: 'wrap',
+                alignItems: 'center',
+                alignContent: 'center',
+                flexDirection: 'column'
+            }}>
             <img src={ me } />
             <div className="d">
             <h2>Christian Paez</h2>
@@ -65,7 +96,13 @@ function Who_are(props)
             </div>
             </div>
             </div>
-            <div id="us">
+            <div id="us" style={isDesktopOrLaptop ? {} : {
+                display: 'flex',
+                flexWrap: 'wrap',
+                alignItems: 'center',
+                alignContent: 'center',
+                flexDirection: 'column'
+            }}>
             <img src={ dabi } />
             <div className="d">
             <h2>David Reyes</h2>
@@ -107,6 +144,7 @@ function Who_are(props)
             </div>
             </div>
         </div>
+        </>
     )
 }
 

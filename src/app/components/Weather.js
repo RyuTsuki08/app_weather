@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from "react";
+import  AOS from 'aos';
 import weather_img from '../img/ICONO_PAGINA.svg';
 import rain_img from '../img/LLUVIA.svg';
 import storm_img from '../img/TORMENTA.svg';
 import Foggy from '../img/nublado.png';
 import Sun from '../img/sun.png';
 import snow from '../img/snow.png'
+import { useMediaQuery } from 'react-responsive'
+import Breakpoints from './query';
 
 function WeatherForm(props)
 {
@@ -12,6 +15,19 @@ function WeatherForm(props)
     countrycode: '', title: '', description: '', 
     temp: '',lat: '', lon: '',
      humidity: '', visibility: ''});
+
+     const isDesktopOrLaptop = useMediaQuery({
+        query: Breakpoints.lg
+      })
+
+    const isMobile = useMediaQuery({
+        query: Breakpoints.sm
+    })
+
+    const isTablet = useMediaQuery({
+        query: Breakpoints.md
+    })
+
     const getAPI = async (city = 'Caracas', cC = "VE") =>
     {
         const apikey = '4d9f48eb46b54897b39bdf70e3729f85';
@@ -75,15 +91,30 @@ function WeatherForm(props)
 
         useEffect(()=>
         {
-            Aos.init();
+            AOS.init();
         }, [])
 
     return(
-        <div id="row" className="row">
+        <div id="row" className="row" style={isDesktopOrLaptop ? {
+            
+        } : {
+            height: '155vh'
+        }}>
         <div id="weather-img" data-aos="fade-down">
             <PutImg />
         </div>
-       <div id="agft" className="com-md-4 mx-auto text-center">
+       <div id="agft" className="com-md-4 mx-auto text-center" 
+       
+       style={ isDesktopOrLaptop ? {}
+    : {
+        display: 'flex',
+        flexDirection: 'column-reverse',
+        alignItems: 'center',
+        justifyContent: 'space-evenly',
+        height: '120vh'
+    }}
+
+       >
         <div className="card"  data-aos="fade-left" >
             <div className="card-body">
                 <PutH1 />
