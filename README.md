@@ -3,7 +3,3 @@ this is my little application to see the state of weather
 
 I have been using React, Webpack, webpack-server.
 
-Heroku app = {
-status: in process,
-name: 'weathertomxed'
-}
