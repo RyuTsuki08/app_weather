@@ -4,10 +4,8 @@ Esta es una sencilla aplicación de React para verificar la temperatura de una z
 Requisitos
 ---------
 
-El proyecto ahorita esta disponible solo para sistemas operativos GNU/linux
-
-4. Git - Control de versiones
-5. Node-js y npm
+- Git - Control de versiones
+- Node-js y npm
 
 
 
